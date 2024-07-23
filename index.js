@@ -6,7 +6,7 @@ const rateLimit = require('express-rate-limit');
 const axios = require('axios');
 
 require('dotenv').config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3005;
 
 const limiter = rateLimit({
     windowMs: 2 * 60 * 1000, // 15 minutes
